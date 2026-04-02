@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'DM Sans', sans-serif;
+	background-color: #ede6dc;
+	background-image:
+		radial-gradient(ellipse 120% 80% at 15% -10%, rgba(26, 95, 122, 0.14), transparent 55%),
+		radial-gradient(ellipse 100% 60% at 95% 5%, rgba(199, 91, 57, 0.1), transparent 50%),
+		radial-gradient(ellipse 80% 40% at 50% 100%, rgba(232, 196, 168, 0.25), transparent 45%),
+		linear-gradient(180deg, #faf7f1 0%, #e8dfd2 55%, #e2d9ce 100%);
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #0c3b5e;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #1a7a8c;
+}
+
+h2 {
+	font-family: 'Fraunces', serif;
+	font-style: italic;
+	font-size: 2.375rem;
+	font-weight: 600;
+	color: #0f3550;
+	letter-spacing: 0.02em;
+}
+
+.container > center h2 {
+	font-size: 2.875rem;
+	font-weight: 600;
+	margin: 3rem 0 0.75rem;
+	text-transform: none;
+	font-variant-numeric: proportional-nums;
+}
+
+.container > center h2::after {
+	content: "";
+	display: block;
+	width: 72px;
+	height: 4px;
+	margin: 1.1rem auto 0;
+	border-radius: 2px;
+	background: linear-gradient(90deg, #1a7a8c 0%, #c75b39 50%, #e8b86d 100%);
+	opacity: 0.9;
+}
+
+#join-us {
+	position: relative;
+	margin-top: auto;
+	padding: 3.25rem 0 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #dfe8ec;
+	background-image:
+		linear-gradient(180deg, rgba(250, 247, 241, 0.97) 0%, rgba(220, 232, 238, 0.55) 28%, rgba(198, 218, 228, 0.75) 100%),
+		repeating-linear-gradient(
+			-12deg,
+			transparent,
+			transparent 48px,
+			rgba(26, 95, 122, 0.04) 48px,
+			rgba(26, 95, 122, 0.04) 49px
+		);
+}
+
+#join-us::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, #0c3b5e 0%, #1a7a8c 40%, #c75b39 85%, #e8b86d 100%);
+}
+
+.typeform-embed {
+	width: 100%;
+	max-width: none;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 12px 40px rgba(12, 40, 62, 0.12), 0 0 0 1px rgba(26, 95, 122, 0.12);
+}
+
+/* Typeform embed often caps width; stretch to full width */
+#join-us .tf-v1-widget,
+#join-us .tf-v1-iframe-wrapper {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+#join-us .tf-v1-widget iframe {
+	width: 100% !important;
+	max-width: 100% !important;
+}

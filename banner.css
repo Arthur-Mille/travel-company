@@ -1,0 +1,33 @@
+.banner {
+	background-color: #0c2840;
+	background-image:
+		linear-gradient(180deg, rgba(8, 40, 62, 0.88) 0%, rgba(18, 74, 98, 0.72) 42%, rgba(12, 48, 72, 0.9) 100%),
+		linear-gradient(125deg, rgba(199, 91, 57, 0.22) 0%, transparent 52%),
+		url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80");
+	color: #fdf8f3;
+	padding: 160px 0px 148px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	text-shadow: 0 3px 20px rgba(4, 24, 40, 0.55);
+}
+
+.banner h1 {
+	font-family: 'Fraunces', serif;
+	font-size: clamp(3rem, 6.5vw, 4.75rem);
+	font-weight: 700;
+	margin-bottom: 18px;
+	letter-spacing: 0.02em;
+	line-height: 1.08;
+}
+
+.banner h2 {
+	font-family: 'DM Sans', sans-serif;
+	font-size: clamp(1.1875rem, 2.35vw, 1.4375rem);
+	font-weight: 300;
+	font-style: normal;
+	color: rgba(253, 248, 243, 0.94);
+	margin-bottom: 42px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
